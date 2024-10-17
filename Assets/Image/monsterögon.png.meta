@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "monster\xF6gon_0": 2269962446737924951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
