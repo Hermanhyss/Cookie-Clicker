@@ -957,6 +957,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 287455169}
   m_CullTransparentMesh: 1
+--- !u!1 &325225159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325225161}
+  - component: {fileID: 325225160}
+  m_Layer: 0
+  m_Name: MinionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &325225160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325225159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724e8901a530a42459756f333d604e4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minionCount: 0
+  minionCost: 50
+  minionInterval: 1
+  minionClickPower: 1
+  MinionCountText: {fileID: 0}
+  MinionCostText: {fileID: 0}
+  NoCookies: {fileID: 0}
+--- !u!4 &325225161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325225159}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 901.7501, y: 546.30225, z: -8.090799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &356835152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,8 +2060,9 @@ GameObject:
   - component: {fileID: 797791803}
   - component: {fileID: 797791802}
   - component: {fileID: 797791801}
+  - component: {fileID: 797791800}
   m_Layer: 5
-  m_Name: Toggle Button
+  m_Name: Slide Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2033,9 +2085,31 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -444, y: 0}
+  m_AnchoredPosition: {x: -400, y: 0}
   m_SizeDelta: {x: 50, y: 120}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!95 &797791800
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797791798}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0fa8539ad1d8c2143b175808427c9e86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &797791801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,9 +2154,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 856674677}
-        m_TargetAssemblyTypeName: SlidingShopMenu, Assembly-CSharp
-        m_MethodName: ToggleShop
+      - m_Target: {fileID: 856674674}
+        m_TargetAssemblyTypeName: SliderMenuAnim, Assembly-CSharp
+        m_MethodName: ShowHideMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2277,7 +2351,7 @@ GameObject:
   - component: {fileID: 856674673}
   - component: {fileID: 856674676}
   - component: {fileID: 856674675}
-  - component: {fileID: 856674677}
+  - component: {fileID: 856674674}
   m_Layer: 5
   m_Name: PanelHandler
   m_TagString: Untagged
@@ -2305,6 +2379,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 55}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &856674674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856674672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71040c001aa6e2f45b0a1d186c68d500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelMenu: {fileID: 856674672}
 --- !u!114 &856674675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,20 +2430,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856674672}
   m_CullTransparentMesh: 1
---- !u!114 &856674677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856674672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ecfc8d1b274bc240b9de9e97ca778e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shopPanel: {fileID: 1987450223}
-  slideSpeed: 5
 --- !u!1 &949602344
 GameObject:
   m_ObjectHideFlags: 0
@@ -3635,8 +3708,9 @@ GameObject:
   - component: {fileID: 1987450223}
   - component: {fileID: 1987450226}
   - component: {fileID: 1987450225}
+  - component: {fileID: 1987450224}
   m_Layer: 5
-  m_Name: ShopPanelRightSide
+  m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3658,11 +3732,33 @@ RectTransform:
   - {fileID: 797791799}
   m_Father: {fileID: 856674673}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -446.3473, y: -515}
-  m_SizeDelta: {x: 393.9202, y: 1030}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1917, y: -515}
+  m_SizeDelta: {x: 350, y: 1030}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!95 &1987450224
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987450222}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cedc8fcb77ec344fb6663feaacfdf20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1987450225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3843,3 +3939,4 @@ SceneRoots:
   - {fileID: 1792973080}
   - {fileID: 1735625086}
   - {fileID: 679666519}
+  - {fileID: 325225161}
