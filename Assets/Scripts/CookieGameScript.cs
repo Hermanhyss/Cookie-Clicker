@@ -1,102 +1,110 @@
-using UnityEngine;
 using TMPro;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class SoulGameScript : MonoBehaviour
+using UnityEngine;
+public class CookieGameScript : MonoBehaviour
 {
-    [SerializeField] int soulCount = 0;
-    [SerializeField] int SoulAdd = 1;
-    [SerializeField] int SoulAddCost = 1;
+    [SerializeField] int cookieCount = 0;
+    [SerializeField] int CookieAdd = 1;
+    [SerializeField] int CookieAddcost = 1;
 
     public bool EscOpen = false;
 
-    public TMP_Text ShopSoulCost;
-    public TMP_Text SoulText;
-    public TMP_Text SoulPerClick;
+    public TMP_Text ShopCookieCost;
+    public TMP_Text CookieText;
+    public TMP_Text CookiePerClick;
 
-    [SerializeField] GameObject NoSouls;
+
+    [SerializeField] GameObject NoCookies;
     [SerializeField] GameObject Shop;
     [SerializeField] GameObject ShopButton;
     [SerializeField] GameObject EscMenu;
-
     void Start()
     {
-        SoulText.text = "Souls: " + soulCount;
+        CookieText.text = "Cookies:" + cookieCount;
         EscOpen = false;
     }
 
-    public void OnSoulClick()
+    public void OnCookieClick()
     {
-        if (SoulAdd > 1)
+        //cookieCount++;
+
+        if (CookieAdd > 1)
         {
-            soulCount += SoulAdd;
+            cookieCount += CookieAdd;
         }
         else
         {
-            soulCount++;
+            cookieCount++;
         }
-        SoulText.text = "Souls: " + soulCount;
+        CookieText.text = "Cookies:" + cookieCount;
     }
-
     public void Update()
     {
-        SoulText.text = "Souls: " + soulCount;
-        ShopSoulCost.text = SoulAddCost + " souls";
-        SoulPerClick.text = SoulAdd + " Souls";
+        CookieText.text = "Cookies:" + cookieCount;
+        ShopCookieCost.text = CookieAddcost + "cookies";
+        CookiePerClick.text = CookieAdd + "Cookies";
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("EscPressed");
-            if (!EscOpen)
+            if (EscOpen == false)
             {
                 EscMenu.SetActive(true);
                 EscOpen = true;
                 Debug.Log("no");
             }
+            //while (EscOpen == true)
+            //{
+            //    if (Input.GetKeyDown(KeyCode.Escape))
+            //    { }
+            //    EscMenu.SetActive(false);
+            //    EscOpen = false;
+            //    Debug.Log("yes");
+            //}
+
         }
     }
 
-    public int GetSoulCount()
+    public int GetCookieCount()
     {
-        return soulCount;
+        return cookieCount;
     }
 
-    public void AddSouls(int amount)
+    public void AddCookies(int amount)
     {
-        soulCount += amount;
-        SoulText.text = "Souls: " + soulCount;
+        cookieCount += amount;
+        CookieText.text = "Cookies: " + cookieCount;
     }
-
     public void OnShopClick()
     {
         Shop.SetActive(true);
         ShopButton.SetActive(false);
     }
-
     public void ShopButtonClose()
     {
         ShopButton.SetActive(true);
         Shop.SetActive(false);
     }
-
     public IEnumerator BuyButton()
     {
-        if (soulCount >= SoulAddCost)
+        if (cookieCount >= CookieAddcost)
         {
-            soulCount -= SoulAddCost;
-            SoulAddCost++;
-            SoulAdd++;
+
+            cookieCount -= CookieAddcost;
+            CookieAddcost++;
+            CookieAdd++;
+
         }
         else
         {
-            NoSouls.SetActive(true);
+            NoCookies.SetActive(true);
             yield return new WaitForSeconds(1);
-            NoSouls.SetActive(false);
+            NoCookies.SetActive(false);
         }
-    }
 
+    }
     public void BuyButton1()
     {
         StartCoroutine(BuyButton());
