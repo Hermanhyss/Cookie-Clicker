@@ -63,8 +63,19 @@ public class CookieGameScript : MonoBehaviour
             //    EscOpen = false;
             //    Debug.Log("yes");
             //}
-            
+
         }
+    }
+
+    public int GetCookieCount()
+    {
+        return cookieCount;
+    }
+
+    public void AddCookies(int amount)
+    {
+        cookieCount += amount;
+        CookieText.text = "Cookies: " + cookieCount; 
     }
     public void OnShopClick()
     {
