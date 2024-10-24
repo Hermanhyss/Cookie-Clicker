@@ -7,4 +7,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("CookieClicker");
     }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
+
