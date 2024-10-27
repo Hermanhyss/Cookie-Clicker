@@ -19,7 +19,7 @@ public class CookieGameScript : MonoBehaviour
     [SerializeField] GameObject NoCookies;
     [SerializeField] GameObject Shop;
     [SerializeField] GameObject ShopButton;
-    [SerializeField] GameObject EscMenu;
+  
     void Start()
     {
         CookieText.text = "Cookies:" + cookieCount;
@@ -46,25 +46,6 @@ public class CookieGameScript : MonoBehaviour
         ShopCookieCost.text = CookieAddcost + "cookies";
         CookiePerClick.text = CookieAdd + "Cookies";
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Debug.Log("EscPressed");
-            if (EscOpen == false)
-            {
-                EscMenu.SetActive(true);
-                EscOpen = true;
-                Debug.Log("no");
-            }
-            //while (EscOpen == true)
-            //{
-            //    if (Input.GetKeyDown(KeyCode.Escape))
-            //    { }
-            //    EscMenu.SetActive(false);
-            //    EscOpen = false;
-            //    Debug.Log("yes");
-            //}
-
-        }
     }
 
     public int GetCookieCount()
@@ -110,8 +91,5 @@ public class CookieGameScript : MonoBehaviour
         StartCoroutine(BuyButton());
     }
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("StartingScene");
-    }
+  
 }

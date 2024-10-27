@@ -32,7 +32,7 @@ public class StartSceneScript : MonoBehaviour
     {
         SceneManager.LoadScene("CookieClicker");
     }
-    // Update is called once per frame
+    
     void Update()
     {
         

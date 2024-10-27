@@ -4,28 +4,26 @@ using System.Collections;
 
 public class MinionManager : MonoBehaviour
 {
-    [SerializeField] int minionCount = 0;           
-    [SerializeField] int minionCost = 50;           
-    [SerializeField] float minionInterval = 1f;    
-    [SerializeField] int minionClickPower = 1;      
+    [SerializeField] int minionCount = 0;
+    [SerializeField] int minionCost = 50;
+    [SerializeField] float minionInterval = 1f;
+    [SerializeField] int minionClickPower = 1;
 
-    private float minionTimer = 0f;                
-    private CookieGameScript gameScript;            
-
-    public TMP_Text MinionCountText;                
-    public TMP_Text MinionCostText;                 
-    public GameObject NoCookies;                    
+    private float minionTimer = 0f;
+    private CookieGameScript gameScript;
+    public TMP_Text MinionCountText;
+    public TMP_Text MinionCostText;
+    public GameObject NoCookies;
+    public Planet planet; 
 
     void Start()
     {
-        
-        gameScript = FindObjectOfType<CookieGameScript>();
+        gameScript = Object.FindAnyObjectByType<CookieGameScript>();
         UpdateMinionUI();
     }
 
     void Update()
     {
-        
         minionTimer += Time.deltaTime;
         if (minionTimer >= minionInterval && minionCount > 0)
         {
@@ -36,28 +34,28 @@ public class MinionManager : MonoBehaviour
 
     public void BuyMinion()
     {
-        
         if (gameScript.GetCookieCount() >= minionCost)
         {
-            gameScript.AddCookies(-minionCost);  
+            gameScript.AddCookies(-minionCost);
             minionCount++;
-            minionCost += 10;                  
+            minionCost += 10;
             UpdateMinionUI();
         }
         else
         {
-            StartCoroutine(ShowNoCookiesMessage()); 
+            StartCoroutine(ShowNoCookiesMessage());
         }
     }
 
     private void AutoClick()
     {
-        gameScript.AddCookies(minionClickPower * minionCount);
+      
+        planet.TriggerPulse();
+        gameScript.AddCookies(minionClickPower * minionCount); 
     }
 
     private void UpdateMinionUI()
     {
-       
         MinionCountText.text = "Minions: " + minionCount;
         MinionCostText.text = "Minion Cost: " + minionCost + " cookies";
     }
@@ -69,3 +67,5 @@ public class MinionManager : MonoBehaviour
         NoCookies.SetActive(false);
     }
 }
+
+
