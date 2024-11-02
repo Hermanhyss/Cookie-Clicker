@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      rymdbakgrund_0: 2236719702249944383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

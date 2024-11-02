@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "kan anv\xE4ndsa som knapp_0": -7675406911554988707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

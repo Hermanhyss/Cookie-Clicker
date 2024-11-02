@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pentagram_0: -1976161606452182943
+      pentagram_1: 9163906382919915183
+      pentagram_10: -6902001294148219698
+      pentagram_11: -5048995036475612187
+      pentagram_12: 7174544100577882222
+      pentagram_13: 3630383198640185403
+      pentagram_2: -2768829667524799100
+      pentagram_3: 1002744818780454384
+      pentagram_4: 1004247754489845436
+      pentagram_5: -1226174709070650385
+      pentagram_6: 3394242869221489830
+      pentagram_7: -4060928683738406215
+      pentagram_8: -3324635350410711255
+      pentagram_9: -7146612729287436062
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

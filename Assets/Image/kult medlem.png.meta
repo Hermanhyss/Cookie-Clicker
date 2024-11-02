@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kult medlem_0: -4530882971153850652
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
