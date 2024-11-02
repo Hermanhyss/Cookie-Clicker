@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 3495bf6c3e456b94b9f3d0563a1d6f3d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6097334463261222445
+    second: "monster\xF6gonlockuppe_0"
+  - first:
+      213: -3970529481455928160
+    second: "monster\xF6gonlockuppe_1"
+  - first:
+      213: -5322009724685579313
+    second: "monster\xF6gonlockuppe_2"
+  - first:
+      213: 3287551901639356911
+    second: "monster\xF6gonlockuppe_3"
+  - first:
+      213: -2203825356910778405
+    second: "monster\xF6gonlockuppe_4"
+  - first:
+      213: 2631372578235532579
+    second: "monster\xF6gonlockuppe_5"
+  - first:
+      213: -7744397242491188799
+    second: "monster\xF6gonlockuppe_6"
+  - first:
+      213: 4684373162034644198
+    second: "monster\xF6gonlockuppe_7"
+  - first:
+      213: 6687145885663851536
+    second: "monster\xF6gonlockuppe_8"
+  - first:
+      213: -7360819976356332166
+    second: "monster\xF6gonlockuppe_9"
+  - first:
+      213: 3486336853464832271
+    second: "monster\xF6gonlockuppe_10"
+  - first:
+      213: 3493801804988437751
+    second: "monster\xF6gonlockuppe_11"
+  - first:
+      213: 7748226419668081905
+    second: "monster\xF6gonlockuppe_12"
+  - first:
+      213: 4165673038977398313
+    second: "monster\xF6gonlockuppe_13"
+  - first:
+      213: -929996218680391220
+    second: "monster\xF6gonlockuppe_14"
+  - first:
+      213: -7945181210537901916
+    second: "monster\xF6gonlockuppe_15"
+  - first:
+      213: -2227458743400017473
+    second: "monster\xF6gonlockuppe_16"
+  - first:
+      213: -478656418368359156
+    second: "monster\xF6gonlockuppe_17"
+  - first:
+      213: 4517645150534401836
+    second: "monster\xF6gonlockuppe_18"
+  - first:
+      213: -5371320698203163020
+    second: "monster\xF6gonlockuppe_19"
+  - first:
+      213: -5659663070880718332
+    second: "monster\xF6gonlockuppe_20"
+  - first:
+      213: 5100886360505164729
+    second: "monster\xF6gonlockuppe_21"
+  - first:
+      213: 8915666318645348126
+    second: "monster\xF6gonlockuppe_22"
+  - first:
+      213: -5092693675052538152
+    second: "monster\xF6gonlockuppe_23"
+  - first:
+      213: -3459769096309327545
+    second: "monster\xF6gonlockuppe_24"
+  - first:
+      213: 6953994970322853236
+    second: "monster\xF6gonlockuppe_25"
+  - first:
+      213: 8116831156962610096
+    second: "monster\xF6gonlockuppe_26"
+  - first:
+      213: -6364207174904600758
+    second: "monster\xF6gonlockuppe_27"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_0"
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2168
+        width: 102
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26ae67a3651e9450800000000000000
+      internalID: 6097334463261222445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_1"
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 2186
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac7a9f2978d5e8c0800000000000000
+      internalID: -3970529481455928160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_2"
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 2193
+        width: 94
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb01f44a5c6426b0800000000000000
+      internalID: -5322009724685579313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_3"
+      rect:
+        serializedVersion: 2
+        x: 2313
+        y: 2201
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1bfdd490bbf9d20800000000000000
+      internalID: 3287551901639356911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_4"
+      rect:
+        serializedVersion: 2
+        x: 2753
+        y: 2186
+        width: 113
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7a556a3807a61e0800000000000000
+      internalID: -2203825356910778405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_5"
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 2196
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325ce651b63848420800000000000000
+      internalID: 2631372578235532579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_6"
+      rect:
+        serializedVersion: 2
+        x: 2936
+        y: 2208
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c94cc15dbf568490800000000000000
+      internalID: -7744397242491188799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_7"
+      rect:
+        serializedVersion: 2
+        x: 2939
+        y: 2180
+        width: 84
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4c27e629c320140800000000000000
+      internalID: 4684373162034644198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_8"
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 2196
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0147534c0c38dcc50800000000000000
+      internalID: 6687145885663851536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_9"
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 2196
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d7ea51b3d19d990800000000000000
+      internalID: -7360819976356332166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_10"
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 2193
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09df1695e4f16030800000000000000
+      internalID: 3486336853464832271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_11"
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 2193
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f454fd0b3a7c7030800000000000000
+      internalID: 3493801804988437751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_12"
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 2197
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcdc9770ea378b60800000000000000
+      internalID: 7748226419668081905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_13"
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 2185
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9267baaee817fc930800000000000000
+      internalID: 4165673038977398313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_14"
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 2181
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9491fcd5df713f0800000000000000
+      internalID: -929996218680391220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_15"
+      rect:
+        serializedVersion: 2
+        x: 2601
+        y: 1765
+        width: 605
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0c7cdc8cb0db190800000000000000
+      internalID: -7945181210537901916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_16"
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 2181
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1ddcf031a7611e0800000000000000
+      internalID: -2227458743400017473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_17"
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 2179
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0571b506887b59f0800000000000000
+      internalID: -478656418368359156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_18"
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1763
+        width: 627
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f7ed23456e1be30800000000000000
+      internalID: 4517645150534401836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_19"
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 2169
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 476b5e0984c3575b0800000000000000
+      internalID: -5371320698203163020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_20"
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 2111
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40222c75c66d471b0800000000000000
+      internalID: -5659663070880718332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_21"
+      rect:
+        serializedVersion: 2
+        x: 3114
+        y: 2112
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b3ab858e1df9c640800000000000000
+      internalID: 5100886360505164729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_22"
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2090
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1745c2974fcabb70800000000000000
+      internalID: 8915666318645348126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_23"
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 2099
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d66d94b51e1359b0800000000000000
+      internalID: -5092693675052538152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_24"
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2091
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749bb99665e6cffc0800000000000000
+      internalID: -3459769096309327545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_25"
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 2052
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d52f7e49d818060800000000000000
+      internalID: 6953994970322853236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_26"
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2081
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb4494bee6c4a070800000000000000
+      internalID: 8116831156962610096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "monster\xF6gonlockuppe_27"
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 2035
+        width: 113
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47a1de1b4bcda7a0800000000000000
+      internalID: -6364207174904600758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
