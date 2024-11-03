@@ -7,7 +7,7 @@ public class CookieGameScript : MonoBehaviour
 {
     [SerializeField] int cookieCount = 0;
     [SerializeField] int CookieAdd = 1;
-    [SerializeField] int CookieAddcost = 1;
+    [SerializeField] int CookieAddcost = 2;
 
     public bool EscOpen = false;
 

@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 3369bbbdb59f9ed43b6a170b0342b850
+guid: e42d22ffaec46c44ca9cc517d221d3ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 721566263856600241
-    second: planetklar_0
-  - first:
-      213: -7097913610840934343
-    second: planetklar_1
+      213: -8393526812391773447
+    second: cliker_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: planetklar_0
+      name: cliker_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 38
-        width: 1967
-        height: 1972
+        x: 249
+        y: 119
+        width: 2842
+        height: 1126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b41417a1b4830a00800000000000000
-      internalID: 721566263856600241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: planetklar_1
-      rect:
-        serializedVersion: 2
-        x: 871
-        y: 29
-        width: 29
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9387a636d252f7d90800000000000000
-      internalID: -7097913610840934343
+      spriteID: 9faebaeb5d3348b80800000000000000
+      internalID: -8393526812391773447
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      planetklar_0: 721566263856600241
-      planetklar_1: -7097913610840934343
+      cliker_0: -8393526812391773447
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
