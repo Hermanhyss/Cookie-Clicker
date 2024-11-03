@@ -10,19 +10,15 @@ public class MinionManager : MonoBehaviour
     [SerializeField] float minionInterval = 1f;
     [SerializeField] int minionClickPower = 1;
 
-    [SerializeField] int strongMinionCost = 200;  
     [SerializeField] GameObject satellitePrefab;
-    [SerializeField] GameObject strongerMinionPrefab;  
     [SerializeField] Transform planetTransform;
 
-    private float minionTimer = 0f;
+    private List<float> minionTimers = new List<float>();
     private CookieGameScript gameScript;
     private List<GameObject> satellites = new List<GameObject>();
-    private List<StrongerMinion> strongerMinions = new List<StrongerMinion>();  
 
     public TMP_Text MinionCountText;
     public TMP_Text MinionCostText;
-    public TMP_Text StrongMinionCostText; 
     public GameObject NoCookies;
     public Planet planet;
 
@@ -34,11 +30,17 @@ public class MinionManager : MonoBehaviour
 
     void Update()
     {
-        minionTimer += Time.deltaTime;
-        if (minionTimer >= minionInterval && minionCount > 0)
+        // Update each minion's timer and trigger clicks if interval is reached
+        for (int i = 0; i < minionTimers.Count; i++)
         {
-            AutoClick();
-            minionTimer = 0f;
+            minionTimers[i] += Time.deltaTime;
+
+            // If this minion's timer reaches its interval, trigger a click and reset its timer
+            if (minionTimers[i] >= minionInterval)
+            {
+                MinionClick(i);
+                minionTimers[i] = 0f;
+            }
         }
 
         UpdateSatellitePositions();
@@ -53,8 +55,12 @@ public class MinionManager : MonoBehaviour
             minionCost += 10;
             UpdateMinionUI();
 
+            // Create a new satellite and add it to the list
             GameObject newSatellite = Instantiate(satellitePrefab, planetTransform.position, Quaternion.identity);
             satellites.Add(newSatellite);
+
+            // Initialize this minion's timer to a random offset to desynchronize clicks
+            minionTimers.Add(Random.Range(0, minionInterval));
         }
         else
         {
@@ -62,41 +68,24 @@ public class MinionManager : MonoBehaviour
         }
     }
 
-    public void BuyStrongerMinion()
+    private void MinionClick(int minionIndex)
     {
-        if (gameScript.GetCookieCount() >= strongMinionCost)
-        {
-            gameScript.AddCookies(-strongMinionCost);
-
-          
-            GameObject newStrongerMinionObj = Instantiate(strongerMinionPrefab);
-            StrongerMinion newStrongerMinion = newStrongerMinionObj.GetComponent<StrongerMinion>();
-            newStrongerMinion.Initialize(gameScript, planet);
-
-           
-            strongerMinions.Add(newStrongerMinion);
-
-            
-            strongMinionCost += 50;
-            UpdateMinionUI();
-        }
-        else
-        {
-            StartCoroutine(ShowNoCookiesMessage());
-        }
-    }
-
-    private void AutoClick()
-    {
+        // Trigger a pulse animation on the planet (visual feedback for the click)
         planet.TriggerPulse();
-        gameScript.AddCookies(minionClickPower * minionCount);
+
+        // Calculate a random position within a radius around the planet for this minion's click
+        Vector3 clickPosition = planetTransform.position + (Random.insideUnitCircle * 1.5f).ToVector3();
+
+        // Use this click to add cookies
+        gameScript.AddCookies(minionClickPower);
+
+        // Optional: You could have each satellite move closer to this position temporarily, if desired
     }
 
     private void UpdateMinionUI()
     {
         MinionCountText.text = "Minions: " + minionCount;
         MinionCostText.text = "Minion Cost: " + minionCost + " cookies";
-        StrongMinionCostText.text = "Stronger Minion Cost: " + strongMinionCost + " cookies";
     }
 
     private IEnumerator ShowNoCookiesMessage()
@@ -114,6 +103,7 @@ public class MinionManager : MonoBehaviour
         {
             float angle = i * angleStep * Mathf.Deg2Rad;
 
+            // Calculate satellite position based on angle around the planet
             float x = planetTransform.position.x + Mathf.Cos(angle) * 3f;
             float y = planetTransform.position.y + Mathf.Sin(angle) * 3f;
 
@@ -121,6 +111,16 @@ public class MinionManager : MonoBehaviour
         }
     }
 }
+
+// Extension method for converting Vector2 to Vector3
+public static class VectorExtensions
+{
+    public static Vector3 ToVector3(this Vector2 v2, float z = 0f)
+    {
+        return new Vector3(v2.x, v2.y, z);
+    }
+}
+
 
 
 
