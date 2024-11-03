@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MinionManager : MonoBehaviour
 {
@@ -9,12 +10,21 @@ public class MinionManager : MonoBehaviour
     [SerializeField] float minionInterval = 1f;
     [SerializeField] int minionClickPower = 1;
 
+    [SerializeField] int strongMinionCost = 200;  
+    [SerializeField] GameObject satellitePrefab;
+    [SerializeField] GameObject strongerMinionPrefab;  
+    [SerializeField] Transform planetTransform;
+
     private float minionTimer = 0f;
     private CookieGameScript gameScript;
+    private List<GameObject> satellites = new List<GameObject>();
+    private List<StrongerMinion> strongerMinions = new List<StrongerMinion>();  
+
     public TMP_Text MinionCountText;
     public TMP_Text MinionCostText;
+    public TMP_Text StrongMinionCostText; 
     public GameObject NoCookies;
-    public Planet planet; 
+    public Planet planet;
 
     void Start()
     {
@@ -30,6 +40,8 @@ public class MinionManager : MonoBehaviour
             AutoClick();
             minionTimer = 0f;
         }
+
+        UpdateSatellitePositions();
     }
 
     public void BuyMinion()
@@ -40,6 +52,33 @@ public class MinionManager : MonoBehaviour
             minionCount++;
             minionCost += 10;
             UpdateMinionUI();
+
+            GameObject newSatellite = Instantiate(satellitePrefab, planetTransform.position, Quaternion.identity);
+            satellites.Add(newSatellite);
+        }
+        else
+        {
+            StartCoroutine(ShowNoCookiesMessage());
+        }
+    }
+
+    public void BuyStrongerMinion()
+    {
+        if (gameScript.GetCookieCount() >= strongMinionCost)
+        {
+            gameScript.AddCookies(-strongMinionCost);
+
+          
+            GameObject newStrongerMinionObj = Instantiate(strongerMinionPrefab);
+            StrongerMinion newStrongerMinion = newStrongerMinionObj.GetComponent<StrongerMinion>();
+            newStrongerMinion.Initialize(gameScript, planet);
+
+           
+            strongerMinions.Add(newStrongerMinion);
+
+            
+            strongMinionCost += 50;
+            UpdateMinionUI();
         }
         else
         {
@@ -49,15 +88,15 @@ public class MinionManager : MonoBehaviour
 
     private void AutoClick()
     {
-      
         planet.TriggerPulse();
-        gameScript.AddCookies(minionClickPower * minionCount); 
+        gameScript.AddCookies(minionClickPower * minionCount);
     }
 
     private void UpdateMinionUI()
     {
         MinionCountText.text = "Minions: " + minionCount;
         MinionCostText.text = "Minion Cost: " + minionCost + " cookies";
+        StrongMinionCostText.text = "Stronger Minion Cost: " + strongMinionCost + " cookies";
     }
 
     private IEnumerator ShowNoCookiesMessage()
@@ -66,6 +105,24 @@ public class MinionManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         NoCookies.SetActive(false);
     }
+
+    private void UpdateSatellitePositions()
+    {
+        float angleStep = 360f / satellites.Count;
+
+        for (int i = 0; i < satellites.Count; i++)
+        {
+            float angle = i * angleStep * Mathf.Deg2Rad;
+
+            float x = planetTransform.position.x + Mathf.Cos(angle) * 3f;
+            float y = planetTransform.position.y + Mathf.Sin(angle) * 3f;
+
+            satellites[i].transform.position = new Vector3(x, y, satellites[i].transform.position.z);
+        }
+    }
 }
+
+
+
 
 

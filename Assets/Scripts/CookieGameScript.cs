@@ -22,7 +22,7 @@ public class CookieGameScript : MonoBehaviour
   
     void Start()
     {
-        CookieText.text = "Cookies:" + cookieCount;
+        CookieText.text = "Soul:" + cookieCount;
         EscOpen = false;
     }
 
@@ -38,13 +38,13 @@ public class CookieGameScript : MonoBehaviour
         {
             cookieCount++;
         }
-        CookieText.text = "Cookies:" + cookieCount;
+        CookieText.text = "Souls:" + cookieCount;
     }
     public void Update()
     {
-        CookieText.text = "Cookies:" + cookieCount;
-        ShopCookieCost.text = CookieAddcost + "cookies";
-        CookiePerClick.text = CookieAdd + "Cookies";
+        CookieText.text = "Souls:" + cookieCount;
+        ShopCookieCost.text = CookieAddcost + "souls";
+        CookiePerClick.text = CookieAdd + "SoulsClick";
 
     }
 
@@ -56,7 +56,7 @@ public class CookieGameScript : MonoBehaviour
     public void AddCookies(int amount)
     {
         cookieCount += amount;
-        CookieText.text = "Cookies: " + cookieCount;
+        CookieText.text = "Souls: " + cookieCount;
     }
     public void OnShopClick()
     {
